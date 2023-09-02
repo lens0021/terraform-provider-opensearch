@@ -394,6 +394,11 @@ func getClient(conf *ProviderConf) (*elastic7.Client, error) {
 	return client, nil
 }
 
+func getOpensearchClient(conf *ProviderConf) (*/*TODO*/, error) {
+	// TODO
+	return client, nil
+}
+
 func assumeRoleCredentials(region, roleARN, roleExternalID, profile string) *awscredentials.Credentials {
 	sessOpts := awsSessionOptions(region)
 	sessOpts.Profile = profile
